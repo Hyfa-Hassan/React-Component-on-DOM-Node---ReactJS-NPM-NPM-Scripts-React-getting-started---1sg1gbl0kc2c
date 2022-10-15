@@ -1,9 +1,4 @@
 function App() {
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render (
-    <div>
-      <p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
-    </div>
-  );
+  ReactDOM.render(<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>, document.getElementById('root'));     
 }
 export default App;
