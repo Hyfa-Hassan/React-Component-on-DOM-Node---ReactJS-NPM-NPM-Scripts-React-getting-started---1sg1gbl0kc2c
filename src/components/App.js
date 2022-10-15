@@ -1,9 +1,13 @@
-const a = Now I can render any React component on any DOM node I want using ReactDOM.render;
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+);
+
 function App() {
-  return (
-    <>
-    <p>{a}</p>
-    </>
+  const element = (
+    <div>
+    <p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+    </div>
   );
+  root.render(element);
 }
 export default App;
